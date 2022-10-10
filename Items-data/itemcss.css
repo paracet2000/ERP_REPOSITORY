@@ -1,0 +1,304 @@
+.row-button {
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    position: absolute;
+    justify-content: end;
+    top: 310px;
+}
+
+.btn-width {
+    width: 100%;
+    margin-bottom: 5px !important;
+}
+
+
+.sidebar {
+    min-width: 80px !important;
+    max-width: 80px !important;
+    text-align: center !important;
+    align-items: stretch !important;
+    display: flex !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    height: 90vh !important;
+    background-color: white !important;
+}
+
+.span1 {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.card-bg {
+    background: #D9D9D9;
+    backdrop-filter: blur(0.5rem);
+    padding: 10px 50px 10px 50px;
+    border-radius: 15px !important;
+    overflow: hidden;
+    
+}
+
+#footer1 {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #028844;
+    z-index: 1 !important;
+}
+
+.width-fix {
+    padding: 10px;
+    width: 110px;
+    border-radius: 10px;
+    
+}
+
+.color-button-save {
+    background-color: #a7fb95d9;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.color-button-edit {
+    background-color: #a27d72;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.color-button-cancal {
+    background-color: #f09862;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.color-button-update {
+    background-color: #869df4;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.color-button-print {
+    background-color: #91d7f2;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.color-button-previwe {
+    background-color: #5da676b3;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.notification {
+    color: white;
+    text-decoration: none;
+    padding: 15px 26px;
+    position: relative;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.border-ra {
+    border-radius: 15px !important;
+}
+
+.fix-button {
+    width: 140px;
+}
+
+.tab-green {
+    padding: 20px 30px;
+    background-color: green;
+    color: black;
+    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.tab-grey {
+    padding: 20px 30px;
+    background-color: gray;
+    color: black;
+    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.botton-model {
+    width: 110px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.grou-botton {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#gridContainer {
+    height: 440px;
+}
+
+.options {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: rgba(191, 191, 191, 0.15);
+}
+
+.caption {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.option {
+    margin-bottom: 10px;
+}
+
+    .option > span {
+        position: relative;
+        margin-right: 10px;
+    }
+
+    .option > div {
+        display: inline-block;
+        font-weight: bold;
+    }
+
+.tab-green {
+padding: 20px 30px; background-color: green; color: black; margin: 5px; margin-left: 5px; margin-right: 5px; border-top-right-radius: 15px; border-top-left-radius: 15px;
+}
+
+.dropdow {
+display: block;
+width: 100%;
+height: 34px;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857143;
+color: #555;
+background-color: #fff;
+background-image: none;
+border: 1px solid #ccc;
+border-radius: 4px;
+-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+-webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+}
+.dx-datagrid .dx-data-row > td.bullet {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+
+  
+  /* //style input sraech button */
+ 
+  /* //*style checkbox datagrid */
+  .options {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(191, 191, 191, 0.15);
+    position: relative;
+  }
+  
+  .caption {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .option {
+    margin-top: 10px;
+  }
+  
+  .checkboxes-mode {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+  
+  .option > .dx-selectbox {
+    width: 150px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .option > span {
+    margin-right: 10px;
+  }
+  
+
+  /* //**ซ้อนแสดงฟอร์ม */
+  .example-box{
+    float:left;
+    width: 500px;
+    margin: 25px auto;
+    padding:20px;
+}
+.custom-radio{
+    
+    width: auto;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* //*** การ์ดฟอร์ม */
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.card-header {
+    background-color: transparent;
+    border-bottom: 1px solid #e2e5e8;
+    padding: 20px 25px;
+    position: relative;
+}
+
+.card-body {
+    padding: 20px 25px;
+}
+
+.form-control {
+    padding: 10px 20px !important;
+    font-size: 14px !important;
+    height: auto !important;
+}
+  

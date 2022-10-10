@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE2NjQ4NTA0ODYsImV4cCI6MTY5NjM4NjQ4NiwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkdpdmVuTmFtZSI6IkpvaG5ueSIsIlN1cm5hbWUiOiJSb2NrZXQiLCJFbWFpbCI6Impyb2NrZXRAZXhhbXBsZS5jb20iLCJSb2xlIjpbIk1hbmFnZXIiLCJQcm9qZWN0IEFkbWluaXN0cmF0b3IiXX0.VYzIIwH7VjkI6Y87ORN7NXYzWpulQ0Npu-om72a-5XY"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write(decodeURIComponent('%3Cscript src="js/jquery.min.js"%3E%3C/script%3E'))</script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/22.1.5/css/dx.common.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/22.1.5/css/dx.light.css" />
+  <script src="https://cdn3.devexpress.com/jslib/22.1.5/js/dx.all.js"></script>
+  <script src="./data/data.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <script src="./script/index.js"></script>
+
+  <title>NST NEW ERP</title>
+</head>
+
+<body style="width: 100%;" class="dx-viewport">
+  <div id="snow"></div>
+  <nav class="navbar navbar-inverse" style="margin-bottom: 0px; margin-left: 0rem; height: 60px; padding: 0 0px;">
+    <div class="container" style="margin-left:0rem; width:100%; padding: 0 5px; border-radius: 10px;">
+      <div class="navbar-header" style="height:40px; padding-top: 0px;">
+        <img class="navbar-brand" src="./images/nst-logo26x26.jpg" id="logo" style="height:40px; padding-top: 0px;">
+        <a class="navbar-brand" href="#">NEW ERP</a>
+      </div>
+    </div>
+    <div class="float-right">
+      <button id="loginButton" class="btn btn-success col-lg-12" style="height:40px;">เข้าระบบ &ThickSpace;<span><img id="user" src="./images/user.png" style="height: 30px;"/></span></button>
+    </div>
+  </nav>
+
+  <div id="id01" class="modal">
+  
+    <form class="modal-content animate"  method="get">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="nst-logo.png" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="container" style="width:80%; padding-left:10%;">
+        <div>
+          <label for="uname"><b>ชื่อผู้ใช้งาน</b></label>
+        </div>
+        <div>          
+          <input type="text" id="uname" style="width: 98%; border-radius: 7px; height: 40px;" name="uname" required>
+        </div>
+        <div>
+          <label for="psw"><b>รหัสผ่าน</b></label>
+        </div>
+        <div>          
+          <input type="password" style="width: 98%; border-radius: 7px; height: 40px;" name="psw" required>
+        </div>  
+        <div> 
+          <button type="button" style="width: 98%;" id="loginbtn" class="btn btn-success" conclick="login">เข้าระบบ</button>
+        </div>
+        <div>
+          <button type="button" style="width: 98%;" onclick="document.getElementById('id01').style.display='none'" class="btn btn-danger">ปิด</button>
+        </div>
+      </div>
+    </form>
+  </div>
+<!-- Menu and Main content here -->
+  
+    <div id="masterContainer"></div>
+    <div id="tasks" class="bg-task"></div>
+      
+  <!-- end of main content -->
+  </div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <meta Content-Type='application/json' />
+    <meta Access-Control-Allow-Headers='application/json' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./itemcss.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/22.1.5/css/dx.common.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/22.1.5/css/dx.light.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write(decodeURIComponent('%3Cscript src="js/jquery.min.js"%3E%3C/script%3E'))</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cldrjs/0.4.4/cldr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cldrjs/0.4.4/cldr/event.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cldrjs/0.4.4/cldr/supplemental.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cldrjs/0.4.4/cldr/unresolved.min.js"></script>
+    <script src="https://cdn3.devexpress.com/jslib/22.1.5/js/dx.all.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./tableexcell.js"></script>
+    <script src="./item.js"></script>
+    <script src="./srechItem.js"></script>
+    <script src="./tableexcell.js"></script>
+    <script src="./totle.js"></script>
+ 
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="demo-container" style="margin-top: 40px; margin-bottom: 40px;">
+                        <div id="gridContainer">
+                
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>
+                                ItemType
+                            </h3>
+                        </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <form action="#" method="post">
+                                        <div class="form-group ">
+                                            <form>
+                                                <div class="col-sm-6">
+                                                    <label for="" >ItemCode:</label>
+                                                    <input type="text" class="form-control " id="codeitem">
+                                                  </div>
+                                                  <div class="col-sm-6">
+                                                    <label for="">ItemType:</label>
+                                                    <input type="text" class="form-control " id="typeitem">
+                                                  </div>
+                                            </form> 
+                                        </div>
+                                        
+                                        <div class="form-group ">
+                                            <form>
+                                                <div class="col-sm-6">
+                                                    <label for="" >ItemName:</label>
+                                                    <input type="text" class="form-control " id="nameitem">
+                                                  </div>
+                                                  <div class="col-sm-6">
+                                                    <label for="">TtemUnit:</label>
+                                                    <input type="" class="form-control " id="unititem">
+                                                  </div>
+                                            </form>
+                                        </div>
+                
+                                        <div class="form-group">
+                                            <form>
+                                                <div class="col-sm-6">
+                                                    <label for="" >ItemStatus:</label>
+                                                    <input type="text" class="form-control " id="statusitem">
+                                                  </div>
+                                                  <div class="col-sm-6">
+                                                    <label for="">MaterialType:</label>
+                                                    <input type="text" class="form-control " id="materrial_type">
+                                                  </div>
+                                            </form>
+                                        </div>
+                
+                                        <div class="form-group">
+                                            <form>
+                                                <div class="col-sm-6">
+                                                    <label for="">U/M:</label>
+                                                    <select id="um-text" class="form-control" style="border-radius: 8px !important;">
+                                                        <option selected value="กรุณาเลือก"></option>
+                                                    </select>
+                                                </div>
+                                                  <div class="col-sm-6">
+                                                    <label for="">Rang:</label>
+                                                    <input type="text" class="form-control " id="materrial_type">
+                                                  </div>
+                                            </form>
+                                        </div>
+                                      </form>
+                                </div>
+                            </div>           
+                    </div> 
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <div id="footer1" class="footer">
+        <div style="margin: 10px;">
+            <button type="button" class="btn color-button-save width-fix " id="clickMe1">บันทึก</button>
+            <button type="button" class="btn color-button-edit width-fix " id="btnOk">แก้ไข</button>
+            <button type="button" class="btn color-button-cancal width-fix " id="btnOk">ยกเลิก</button>
+            <button type="button" class="btn color-button-update width-fix " id="btnOk">อัพเดต</button>
+            <button type="button" class="btn color-button-print width-fix " id="btnOk">ปริ้น</button>
+            <button type="button" class="btn color-button-previwe width-fix " id="btnOk">พรีวิว</button>
+        </div>
+
+        <div style="position: absolute; color: black; z-index: 2; top: 0; display: none;">
+            <span><label>IP Address: 192.168.1.3</label></span>
+            <span><label>Machine address: 00:00:5e:00:53:af</label></span>
+            <span><label>Computer name: Nst-IT-9</label></span>
+            <span><label>เวลาที่ใช้งาน 00 ซม. 38 นาที 20 วินาที: 00:00:5e:00:53:af</label></span>
+        </div>
+
+    </div>
+</body>
+
+</html>
